@@ -1,0 +1,35 @@
+.container{
+  width: 100%;
+  background-color: #8A2BE2;
+  border: 20px solid rgba(255,255,255,0.2);
+  .cursor{
+    text-align: center;
+    float:left;
+    height:15px;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+  }
+  .cursor::before{
+    font-size: 1.8em;
+    color:#7FFF00;
+    content:"a";
+  }
+  .text-sort-disabled{
+    width: 15px;
+    text-align: center;
+    float: left;
+    white-space: pre-wrap;
+  }
+  .draggable-selection-text{
+    cursor: pointer;
+  }
+  .cursor-selection{
+    background-color: #F0F8FF;
+    white-space: pre-wrap;
+  }
+  .text{
+    height:50px;
+  }
+}

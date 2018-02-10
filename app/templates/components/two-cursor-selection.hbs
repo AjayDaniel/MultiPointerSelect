@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row" id={{currentContainmentId}}>
+      <div class="text">
+        <span id={{dragId}}>
+          <span class="cursor sort-cursor" id={{cursor1Id}}></span>
+          <span class="cursor sort-cursor" id={{cursor2Id}}></span>
+          <span id={{span0Id}}></span>
+          {{#each totalText as |character|}}
+            <span id={{character.spanId}} class="text-sort-disabled">{{character.data}}</span>
+          {{/each}}
+        </span>
+      </div>
+    </div>
+</div>
